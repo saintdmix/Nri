@@ -149,11 +149,15 @@ class _ProductSliderState extends State<ProductSlider> {
                       width: double.infinity,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(
-                          image: NetworkImage(i),
-                          fit: BoxFit.cover,
-                        ),
+                      //   image: DecorationImage(
+                      //     image: AssetImage(i),
+                      //     fit: BoxFit.cover,
+                      //   ),
                       ),
+                      child: ClipRRect(
+                                                borderRadius: BorderRadius.circular(20),
+
+                        child: Image.asset(i, height: 200, fit: BoxFit.cover)),
                     ),
 
                     // Units Badge
