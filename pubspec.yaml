@@ -39,6 +39,28 @@ dependencies:
 
 dev_dependencies:
   flutter_lints: ^4.0.0
+  flutter_launcher_icons: "^0.14.3"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/images/NriMainLogo.png"
+  min_sdk_android: 23
+  adaptive_icon_foreground: "assets/images/NriMainLogo.png"
+  adaptive_icon_background: "#FE724C"
+  web:
+    generate: true
+    image_path: "assets/images/NriMainLogo.png"
+    background_color: "#FE724C"
+    theme_color: "#FE724C"
+  windows:
+    generate: true
+    image_path: "assets/images/NriMainLogo.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/images/NriMainLogo.png"
   flutter_test:
     sdk: flutter
 
