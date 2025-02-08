@@ -82,7 +82,7 @@ class LandingPage extends StatelessWidget {
           onTap: () {
             // https: //drive.google.com/file/d/1nnGARht5k1O5CMlE7GmalKLhY2Ewdm3p/view?usp=drive_link
             downloadFile(
-                "https://www.dropbox.com/scl/fi/7l2k3gqq3yfog6o6h91wk/Nri.apk?rlkey=bhgw8psgtgiuhuq11dn6i0ecn&st=u48gpmqv&dl=1",
+                "https://dl.dropboxusercontent.com/scl/fi/7l2k3gqq3yfog6o6h91wk/Nri.apk?rlkey=bhgw8psgtgiuhuq11dn6i0ecn",
                 "Nri");
           },
           child: Container(
