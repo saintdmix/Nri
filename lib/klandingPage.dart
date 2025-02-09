@@ -75,13 +75,13 @@ class LandingPage extends StatelessWidget {
         ProductSlider(mainList: imagess),
         const Text(
             textAlign: TextAlign.center,
-            "Welcome to Nri, A Platform Where We Deliver To You Your Favourites Delicacies Straight To Your Doorstep Click The Button Below To Download The App",
+            "Welcome to Nri, A Platform Where We Deliver To You Your Favourites Delicacies Straight To Your Doorstep Click The Button Below To Download The App.",
             style: ConstStyles.SofiaProRegular15Black),
         SizedBox(height: 20.h),
         GestureDetector(
           onTap: () {
             downloadFile(
-                "https://dl.dropboxusercontent.com/scl/fi/7l2k3gqq3yfog6o6h91wk/Nri.apk?rlkey=bhgw8psgtgiuhuq11dn6i0ecn",
+                "https://dl.dropboxusercontent.com/scl/fi/ybon4y70ndivbh040ahyl/Nri.apk?rlkey=mti52brbg72871h62gsnxeflr&st=2ai16qp6",
                 "Nri");
           },
           child: Container(
