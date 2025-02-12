@@ -75,7 +75,7 @@ class LandingPage extends StatelessWidget {
         ProductSlider(mainList: imagess),
         const Text(
             textAlign: TextAlign.center,
-            "Welcome to Nri, A Platform Where We Deliver To You Your Favourites Delicacies Straight To Your Doorstep Click The Button Below To Download The App",
+            "Welcome to Nri, A platform where we deliver to you your favourites delicacies straight to your doorstep click the button below to download the App",
             style: ConstStyles.SofiaProRegular15Black),
         SizedBox(height: 20.h),
         GestureDetector(
