@@ -81,7 +81,8 @@ class LandingPage extends StatelessWidget {
         GestureDetector(
           onTap: () {
             downloadFile(
-                "https://dl.dropboxusercontent.com/scl/fi/doc3an1lr8j0ttrsu42z7/Nri.apk?rlkey=vdqtpwk0miyx7cc6fan03kbpz&st=dcfz7mfy",
+             "https://dl.dropboxusercontent.com/scl/fi/86gugdv36c1cg05s7a57h/Nri.apk?rlkey=wo7zikhk5hn3pnvcyyizlnhjd&st=j0ywzvc5&dl=1
+",
                 "Nri");
           },
           child: Container(
