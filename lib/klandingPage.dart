@@ -1,11 +1,11 @@
 import 'dart:html' as html;
-import 'package:url_launcher/url_launcher.dart';
 
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nriweb/constants/colorConstants.dart';
 import 'package:nriweb/constants/constStyles.dart';
+import 'package:nriweb/downloadPage.dart';
 import 'package:wave/config.dart';
 import 'package:wave/wave.dart';
 
@@ -19,20 +19,6 @@ class LandingPage extends StatelessWidget {
     5000,
     4000,
   ];
-  void downloadFile(String url, String fileName) {
-    final anchor = html.AnchorElement(href: url)
-      ..setAttribute("download", fileName)
-      ..click();
-  }
-    final String apkUrl = "https://github.com/saintdmix/Nri/releases/latest/download/Nri.apk";
-
-  Future<void> _downloadApk() async {
-    final Uri url = Uri.parse(apkUrl);
-    if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
-      throw "Could not launch $apkUrl";
-    }
-  }
-
 
   static const _heightPercentages = [
     0.65,
@@ -85,11 +71,15 @@ class LandingPage extends StatelessWidget {
         ProductSlider(mainList: imagess),
         const Text(
             textAlign: TextAlign.center,
-            "Welcome to Nri, A Platform where we deliver to you your favourites delicacies straight to your doorstep click the button below to download the App.",
+            "Welcome to Nri, A platform where we deliver to you your favourites delicacies straight to your doorstep click the button below to download the app",
             style: ConstStyles.SofiaProRegular15Black),
         SizedBox(height: 20.h),
         GestureDetector(
-          onTap: _downloadApk,
+          onTap: () {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (_) => PaystackWeb()));
+            // https: //drive.google.com/file/d/1nnGARht5k1O5CMlE7GmalKLhY2Ewdm3p/view?usp=drive_link
+          },
           child: Container(
               decoration: BoxDecoration(
                   color: ConstColors.mainColorOrange,
@@ -154,15 +144,15 @@ class _ProductSliderState extends State<ProductSlider> {
                       width: double.infinity,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                      //   image: DecorationImage(
-                      //     image: AssetImage(i),
-                      //     fit: BoxFit.cover,
-                      //   ),
+                        //   image: DecorationImage(
+                        //     image: AssetImage(i),
+                        //     fit: BoxFit.cover,
+                        //   ),
                       ),
                       child: ClipRRect(
-                                                borderRadius: BorderRadius.circular(20),
-
-                        child: Image.asset(i, height: 200, fit: BoxFit.cover)),
+                          borderRadius: BorderRadius.circular(20),
+                          child:
+                              Image.asset(i, height: 200, fit: BoxFit.cover)),
                     ),
 
                     // Units Badge
