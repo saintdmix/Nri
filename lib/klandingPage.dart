@@ -23,6 +23,15 @@ class LandingPage extends StatelessWidget {
       ..setAttribute("download", fileName)
       ..click();
   }
+    final String apkUrl = "https://github.com/saintdmix/Nri/releases/latest/download/Nri.apk";
+
+  Future<void> _downloadApk() async {
+    final Uri url = Uri.parse(apkUrl);
+    if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
+      throw "Could not launch $apkUrl";
+    }
+  }
+
 
   static const _heightPercentages = [
     0.65,
@@ -79,11 +88,7 @@ class LandingPage extends StatelessWidget {
             style: ConstStyles.SofiaProRegular15Black),
         SizedBox(height: 20.h),
         GestureDetector(
-          onTap: () {
-            downloadFile(
-             "https://github.com/saintdmix/Nri/releases/download/v1.0.0/Nri.apk",
-                "Nri");
-          },
+          onTap: _downloadApk,
           child: Container(
               decoration: BoxDecoration(
                   color: ConstColors.mainColorOrange,
