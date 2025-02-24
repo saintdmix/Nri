@@ -77,7 +77,7 @@ class LandingPage extends StatelessWidget {
         GestureDetector(
           onTap: () {
             Navigator.of(context)
-                .push(MaterialPageRoute(builder: (_) => PaystackWeb()));
+                .push(MaterialPageRoute(builder: (_) => DownloadPage()));
             // https: //drive.google.com/file/d/1nnGARht5k1O5CMlE7GmalKLhY2Ewdm3p/view?usp=drive_link
           },
           child: Container(
