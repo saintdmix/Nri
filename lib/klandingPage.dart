@@ -35,6 +35,15 @@ class LandingPage extends StatelessWidget {
     "assets/images/foodImage3.png",
     "assets/images/shawama.jpg"
   ];
+
+
+void downloadFile() {
+  final url = "https://dl.dropboxusercontent.com/scl/fi/9n9rs75a0xokj68vn10e2/Nri.apk?rlkey=5vxwgv278c0eq46xoeogz0873&st=m025rbs9";
+  
+  final anchor = html.AnchorElement(href: url)
+    ..setAttribute("download", "Nri.apk")  // Forces download
+    ..click();
+}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,11 +84,7 @@ class LandingPage extends StatelessWidget {
             style: ConstStyles.SofiaProRegular15Black),
         SizedBox(height: 20.h),
         GestureDetector(
-          onTap: () {
-            Navigator.of(context)
-                .push(MaterialPageRoute(builder: (_) => DownloadPage()));
-            // https: //drive.google.com/file/d/1nnGARht5k1O5CMlE7GmalKLhY2Ewdm3p/view?usp=drive_link
-          },
+          onTap: downloadFile,
           child: Container(
               decoration: BoxDecoration(
                   color: ConstColors.mainColorOrange,
