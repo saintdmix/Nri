@@ -4,7 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 class DownloadPage extends StatelessWidget {
   final String apkUrl =
-      "https://github.com/saintdmix/Nri/releases/latest/download/Nri.apk";
+      "https://www.dropbox.com/scl/fi/9n9rs75a0xokj68vn10e2/Nri.apk?rlkey=5vxwgv278c0eq46xoeogz0873&st=qn8k9u3a&dl=1";
 
   Future<void> _downloadApk() async {
     Uri url = Uri.parse(apkUrl);
