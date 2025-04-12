@@ -38,10 +38,10 @@ class LandingPage extends StatelessWidget {
 
 
 void downloadFile() {
-  final url = "https://play.google.com/store/apps/details?id=com.saint.nriigbo";
-  
+  // final url = "https://play.google.com/store/apps/details?id=com.saint.nriigbo";
+  final url = "https://dl.dropboxusercontent.com/scl/fi/0tk4u2f5u4buakxdgyplk/Ark.apk?rlkey=5edx4mp4whl8vqt4gt8sipf1f&dl=1";
   final anchor = html.AnchorElement(href: url)
-    ..setAttribute("download", "Nri.apk")  // Forces download
+    ..setAttribute("download", "Ark.apk")  // Forces download
     ..click();
 }
   @override
@@ -56,31 +56,14 @@ void downloadFile() {
             SizedBox(
               width: 20.w,
             ),
-            Container(
-              height: 50,
-              width: 50,
-              decoration: BoxDecoration(
-                  image: const DecorationImage(
-                      fit: BoxFit.cover,
-                      image: AssetImage(
-                        "assets/images/NriMainLogo.png",
-                      )),
-                  borderRadius: BorderRadius.circular(10.r)),
-            ),
-            const Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text("  Nri", style: ConstStyles.SofiaProBold14Orange),
-                Text("  Delivering your favourites food fast to your doorstep",
-                    style: ConstStyles.SofiaProMedium11Grey3),
-              ],
-            ),
+           
+         
           ],
         ),
         ProductSlider(mainList: imagess),
         const Text(
             textAlign: TextAlign.center,
-            "Welcome to Nri, A platform where we deliver to you your favourites delicacies straight to your doorstep click the button below to download the App",
+            "Welcome to Ark, A platform where we deliver to you your favourites goods and food items straight to your doorstep click the button below to download the App",
             style: ConstStyles.SofiaProRegular15Black),
         SizedBox(height: 20.h),
         GestureDetector(
