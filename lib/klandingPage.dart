@@ -39,9 +39,9 @@ class LandingPage extends StatelessWidget {
 
 void downloadFile() {
   // final url = "https://play.google.com/store/apps/details?id=com.saint.nriigbo";
-  final url = "https://dl.dropboxusercontent.com/scl/fi/0tk4u2f5u4buakxdgyplk/Ark.apk?rlkey=5edx4mp4whl8vqt4gt8sipf1f&dl=1";
+  final url = "https://dl.dropboxusercontent.com/scl/fi/m3rfysojv2ybqwh0cggqu/Nri.apk?rlkey=9lnl5d0l02mhnsrr6ma52gd16&dl=1";
   final anchor = html.AnchorElement(href: url)
-    ..setAttribute("download", "Ark.apk")  // Forces download
+    ..setAttribute("download", "Nri.apk")  // Forces download
     ..click();
 }
   @override
@@ -63,7 +63,7 @@ void downloadFile() {
         ProductSlider(mainList: imagess),
         const Text(
             textAlign: TextAlign.center,
-            "Welcome to Ark, A platform where we deliver to you your favourites goods and food items straight to your doorstep click the button below to download the App",
+            "Welcome to Nri,where your favourite meals from your favourite resataurants meets you at your doorstep",
             style: ConstStyles.SofiaProRegular15Black),
         SizedBox(height: 20.h),
         GestureDetector(
