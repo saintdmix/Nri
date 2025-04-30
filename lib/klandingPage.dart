@@ -38,7 +38,6 @@ class LandingPage extends StatelessWidget {
 
 
 void downloadFile() {
-  // final url = "https://play.google.com/store/apps/details?id=com.saint.nriigbo";
   final url = "https://dl.dropboxusercontent.com/scl/fi/m3rfysojv2ybqwh0cggqu/Nri.apk?rlkey=9lnl5d0l02mhnsrr6ma52gd16&dl=1";
   final anchor = html.AnchorElement(href: url)
     ..setAttribute("download", "Nri.apk")  // Forces download
