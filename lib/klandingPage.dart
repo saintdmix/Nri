@@ -1,9 +1,9 @@
 // import 'package:carousel_slider/carousel_slider.dart';
 // import 'package:flutter/material.dart';
 // import 'package:flutter_screenutil/flutter_screenutil.dart';
-// import 'package:Nriweb/constants/colorConstants.dart';
-// import 'package:Nriweb/constants/constStyles.dart';
-// import 'package:Nriweb/downloadPage.dart';
+// import 'package:Workpalweb/constants/colorConstants.dart';
+// import 'package:Workpalweb/constants/constStyles.dart';
+// import 'package:Workpalweb/downloadPage.dart';
 // import 'package:wave/config.dart';
 // import 'package:wave/wave.dart';
 
@@ -52,14 +52,14 @@
 //                   image: const DecorationImage(
 //                       fit: BoxFit.cover,
 //                       image: AssetImage(
-//                         "assets/images/NriMainLogo.png",
+//                         "assets/images/WorkpalMainLogo.png",
 //                       )),
 //                   borderRadius: BorderRadius.circular(10.r)),
 //             ),
 //             const Column(
 //               crossAxisAlignment: CrossAxisAlignment.start,
 //               children: [
-//                 Text("  Nri", style: ConstStyles.SofiaProBold14Orange),
+//                 Text("  Workpal", style: ConstStyles.SofiaProBold14Orange),
 //                 Text("  Delivering your favourites food fast to your doorstep",
 //                     style: ConstStyles.SofiaProMedium11Grey3),
 //               ],
@@ -69,7 +69,7 @@
 //         ProductSlider(mainList: imagess),
 //         const Text(
 //             textAlign: TextAlign.center,
-//             "Welcome to Nri, A platform where we deliver to you your favourites delicacies straight to your doorstep click the button below to download the app",
+//             "Welcome to Workpal, A platform where we deliver to you your favourites delicacies straight to your doorstep click the button below to download the app",
 //             style: ConstStyles.SofiaProRegular15Black),
 //         SizedBox(height: 20.h),
 //         GestureDetector(
@@ -184,13 +184,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:go_router/go_router.dart';
 
-class NriApp extends StatelessWidget {
-  const NriApp({super.key});
+class WorkpalApp extends StatelessWidget {
+  const WorkpalApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Nri Food Delivery',
+      title: 'Workpal Food Delivery',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
@@ -272,7 +272,7 @@ class AppHeader extends StatelessWidget {
             ),
             child: const Center(
               child: Text(
-                'Nri',
+                'Workpal',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -283,7 +283,7 @@ class AppHeader extends StatelessWidget {
           ),
           const SizedBox(width: 8),
           const Text(
-            'Nri Food Delivery',
+            'Workpal Food Delivery',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20,
@@ -385,7 +385,7 @@ class AppFooter extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           const Text(
-            '© 2025 Nri Food Delivery. All rights reserved.',
+            '© 2025 Workpal Food Delivery. All rights reserved.',
             style: TextStyle(color: Color(0xFF757575)),
           ),
         ],
@@ -442,7 +442,7 @@ class HomePage extends StatelessWidget {
                     ),
                     child: const Center(
                       child: Text(
-                        'Nri',
+                        'Workpal',
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
@@ -453,7 +453,7 @@ class HomePage extends StatelessWidget {
                   ),
                   const SizedBox(height: 24),
                   const Text(
-                    'Welcome to Nri Food Delivery',
+                    'Welcome to Workpal Food Delivery',
                     style: TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
@@ -550,7 +550,7 @@ class PrivacyPolicyContent extends StatelessWidget {
               const PolicySection(
                 title: 'Introduction',
                 content:
-                    'Nri ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by Nri when you use our mobile application and related services (collectively, the "Service").\n\nBy accessing or using the Service, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy.',
+                    'Workpal ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by Workpal when you use our mobile application and related services (collectively, the "Service").\n\nBy accessing or using the Service, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy.',
               ),
               const PolicySection(
                 title: 'Information We Collect',
@@ -590,7 +590,7 @@ class PrivacyPolicyContent extends StatelessWidget {
               const PolicySection(
                 title: 'Contact Us',
                 content:
-                    'If you have any questions about this Privacy Policy, please contact us at:\n\nEmail: Nrifood.care@gmail.com',
+                    'If you have any questions about this Privacy Policy, please contact us at:\n\nEmail: Workpalfood.care@gmail.com',
               ),
               const SizedBox(height: 30),
             ],
@@ -698,12 +698,12 @@ class TermsContent extends StatelessWidget {
               const PolicySection(
                 title: 'Agreement to Terms',
                 content:
-                    'By accessing or using the Nri Food Delivery mobile application and services, you agree to be bound by these Terms of Service. If you do not agree to these Terms, you may not access or use the Service.',
+                    'By accessing or using the Workpal Food Delivery mobile application and services, you agree to be bound by these Terms of Service. If you do not agree to these Terms, you may not access or use the Service.',
               ),
               const PolicySection(
                 title: 'Use of Service',
                 content:
-                    'Nri Food Delivery provides a platform connecting users with restaurants and delivery partners. You may use our Service only for lawful purposes and in accordance with these Terms. You agree not to use the Service:\n\n• In any way that violates applicable laws or regulations\n• To impersonate or attempt to impersonate Nri, an Nri employee, another user, or any other person\n• To engage in any conduct that restricts or inhibits anyone\'s use or enjoyment of the Service',
+                    'Workpal Food Delivery provides a platform connecting users with restaurants and delivery partners. You may use our Service only for lawful purposes and in accordance with these Terms. You agree not to use the Service:\n\n• In any way that violates applicable laws or regulations\n• To impersonate or attempt to impersonate Workpal, an Workpal employee, another user, or any other person\n• To engage in any conduct that restricts or inhibits anyone\'s use or enjoyment of the Service',
               ),
               const PolicySection(
                 title: 'User Accounts',
@@ -718,17 +718,17 @@ class TermsContent extends StatelessWidget {
               const PolicySection(
                 title: 'Delivery',
                 content:
-                    'Delivery times are estimates and may vary based on factors such as distance, traffic, weather conditions, and restaurant preparation times. Nri is not responsible for delays in delivery due to factors beyond our reasonable control.',
+                    'Delivery times are estimates and may vary based on factors such as distance, traffic, weather conditions, and restaurant preparation times. Workpal is not responsible for delays in delivery due to factors beyond our reasonable control.',
               ),
               const PolicySection(
                 title: 'Intellectual Property',
                 content:
-                    'The Service and its entire contents, features, and functionality are owned by Nri, its licensors, or other providers and are protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, create derivative works of, publicly display, or publicly perform any of the materials from the Service without prior written consent.',
+                    'The Service and its entire contents, features, and functionality are owned by Workpal, its licensors, or other providers and are protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, create derivative works of, publicly display, or publicly perform any of the materials from the Service without prior written consent.',
               ),
               const PolicySection(
                 title: 'Limitation of Liability',
                 content:
-                    'Nri shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your access to or use of, or inability to access or use, the Service. In no event shall our total liability to you for all damages exceed the amount paid by you, if any, for accessing or using the Service during the twelve months prior to bringing the claim.',
+                    'Workpal shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your access to or use of, or inability to access or use, the Service. In no event shall our total liability to you for all damages exceed the amount paid by you, if any, for accessing or using the Service during the twelve months prior to bringing the claim.',
               ),
               const PolicySection(
                 title: 'Changes to Terms',
@@ -738,7 +738,7 @@ class TermsContent extends StatelessWidget {
               const PolicySection(
                 title: 'Contact Us',
                 content:
-                    'If you have any questions about these Terms, please contact us at:\n\nEmail: Nrifood.care@gmail.com',
+                    'If you have any questions about these Terms, please contact us at:\n\nEmail: Workpalfood.care@gmail.com',
               ),
               const SizedBox(height: 30),
             ],
@@ -787,7 +787,7 @@ class _AboutContent extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text(
-                'About Nri',
+                'About Workpal',
                 style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
@@ -805,7 +805,7 @@ class _AboutContent extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               const Text(
-                'At Nri Food Delivery, our mission is to connect people with the food they love from their favorite local restaurants. We strive to make food delivery convenient, reliable, and satisfying for everyone.',
+                'At Workpal Food Delivery, our mission is to connect people with the food they love from their favorite local restaurants. We strive to make food delivery convenient, reliable, and satisfying for everyone.',
                 style: TextStyle(
                   fontSize: 16,
                   height: 1.5,
@@ -823,7 +823,7 @@ class _AboutContent extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               const Text(
-                'Founded in 2023, Nri Food Delivery began with a simple idea: to make great food more accessible. What started as a small operation serving a few neighborhoods has grown into a platform connecting thousands of customers with their favorite restaurants across multiple cities.',
+                'Founded in 2023, Workpal Food Delivery began with a simple idea: to make great food more accessible. What started as a small operation serving a few neighborhoods has grown into a platform connecting thousands of customers with their favorite restaurants across multiple cities.',
                 style: TextStyle(
                   fontSize: 16,
                   height: 1.5,
@@ -926,13 +926,13 @@ class _ContactContent extends StatelessWidget {
               const PolicySection(
                 title: 'Delete Account',
                 content:
-                    'At Nri App we value your privacy. Currently our app does nbot support direct i app deletion of your account if you would like to account and remove yoyur personal data , please folow the instruction below ',
+                    'At Workpal App we value your privacy. Currently our app does nbot support direct i app deletion of your account if you would like to account and remove yoyur personal data , please folow the instruction below ',
               ),
               const SizedBox(height: 10),
               const PolicySection(
                 title: 'How to Request Account deletion ',
                 content:
-                    'To delete our account and all associated data please send an email to our support team at Nrifood.care@gmail.com with the subject line "DELETE MY ACCOUNT" In your email, include your email',
+                    'To delete our account and all associated data please send an email to our support team at Workpalfood.care@gmail.com with the subject line "DELETE MY ACCOUNT" In your email, include your email',
               ),
               const SizedBox(height: 10),
               const PolicySection(
